@@ -216,7 +216,7 @@ server.post('/finish', (request, response) => {
         'message': message
     });
 
-    database.lrem('queue:messages', entry).then(() => {
+    database.lrem('queue:messages', 0, entry).then(() => {
         console.log(
             `${serverID}: Removed the work item with the ID '${id}' at ` +
             `${new Date()} from the in-progress queue.`
