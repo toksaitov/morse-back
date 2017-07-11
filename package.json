@@ -1,0 +1,34 @@
+{
+  "name": "morse-back",
+  "version": "1.0.0",
+  "description": "morse-back is a work queue for the morse system.",
+  "main": "morse-back.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node morse-back.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toksaitov/morse-back.git"
+  },
+  "keywords": [
+    "Morse",
+    "code",
+    "IoT",
+    "ESP8266"
+  ],
+  "author": "Dmitrii Toksaitov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toksaitov/morse-back/issues"
+  },
+  "homepage": "https://github.com/toksaitov/morse-back#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "ioredis": "^3.1.1",
+    "shortid": "^2.2.8",
+    "validator": "^8.0.0"
+  }
+}

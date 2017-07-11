@@ -1,0 +1,20 @@
+version: "2"
+
+services:
+  morse-back:
+    build: "."
+    image: "toksaitov/morse-back"
+    ports:
+      - "80:7474"
+    env_file:
+      - ".env"
+    depends_on:
+      - "morse-redis-db"
+
+  morse-redis-db:
+    image: "redis:3.2.9-alpine"
+    networks:
+      default:
+        aliases:
+          - "morse-queue-db"
+
